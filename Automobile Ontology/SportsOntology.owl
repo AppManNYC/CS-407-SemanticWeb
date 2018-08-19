@@ -1,0 +1,447 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#"
+     xml:base="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#employs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#employs">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#playsFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#playsFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#playsFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#Team"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarBaseballPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarBaseballPlayer">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#playsFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarBaseballTeam"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarBaseballTeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarBaseballTeam">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarTeam"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#BaseballTeam"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarPlayer">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#playsFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarTeam"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarSoccerPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarSoccerPlayer">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#playsFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarSoccerTeam"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarSoccerTeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarSoccerTeam">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarTeam"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#SoccerTeam"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarTeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarTeam">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#employs"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarPlayer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#BaseballPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#BaseballPlayer">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#playsFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#BaseballTeam"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#BaseballTeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#BaseballTeam">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#employs"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#BaseballPlayer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#BostonC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#BostonC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#MASoccerTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#CCSU -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#CCSU">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#CTSoccerTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#CTSoccerTeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#CTSoccerTeam">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#CCSU"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#HartfordU"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#UCONN"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#ValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#HartfordU -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#HartfordU">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#CTSoccerTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#HarvardU -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#HarvardU">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#MASoccerTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#MASoccerTeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#MASoccerTeam">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#BostonC"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#HarvardU"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#SpringfieldC"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#ValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#NewEnglandSoccerTeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#NewEnglandSoccerTeam">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#CTSoccerTeam"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#MASoccerTeam"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#SoccerTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#Player"/>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#SoccerPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#SoccerPlayer">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#playsFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#SoccerTeam"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#SoccerTeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#SoccerTeam">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#employs"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#SoccerPlayer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#SpringfieldC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#SpringfieldC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#MASoccerTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#Team"/>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#UCONN -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#UCONN">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#CTSoccerTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#ValuePartition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#ValuePartition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarBaseballPlayer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarBaseballPlayer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarBaseballPlayer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#XanderBogaerts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#XanderBogaerts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarBaseballPlayer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarPlayer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarPlayer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarPlayer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarPlayer2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarPlayer2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarPlayer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarSoccerPlayer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarSoccerPlayer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarSoccerPlayer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarSoccerPlayer2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarSoccerPlayer2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarSoccerPlayer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#BayernMunich -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#BayernMunich">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarSoccerTeam"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#ChrisSale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#ChrisSale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarBaseballPlayer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#ManchesterUnited -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#ManchesterUnited">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#SoccerTeam"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#BaseballPlayer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#BaseballPlayer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#BaseballPlayer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#BaseballPlayer2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#BaseballPlayer2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#BaseballPlayer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#NewYorkYankees -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#NewYorkYankees">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#BaseballTeam"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#SoccerPlayer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#SoccerPlayer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#SoccerPlayer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#SoccerPlayer2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#SoccerPlayer2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#SoccerPlayer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#BostonRedSox -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#BostonRedSox">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MatthewKrieger/ontologies/SportOntology#AllStarBaseballTeam"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+
+

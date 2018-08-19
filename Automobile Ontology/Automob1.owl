@@ -1,0 +1,203 @@
+<owl:Class rdf:about="http://www.semanticweb.org/ontologies/2013/2/Car_Ontology.owl#HardTop">
+<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2013/2/Car_Ontology.owl#Roof"/>
+<owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2013/2/Car_Ontology.owl#NoTop"/>
+<owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2013/2/Car_Ontology.owl#SoftTop"/>
+</owl:Class> Properties Object Property example:
+
+- hasTransmission
+- hasRoofType
+- hasInteriorColor
+- hasPriceRange
+
+Data Property example:
+
+- hasMileage
+- hasHorsePower
+- hasRemoteStart Classes Created ontology in Protege
+
+Class examples:
+
+- Car
+
+-HardTop
+
+- Coupe
+
+- AutomaticTransmissionType Domain Car Axioms and Inferences Examples:
+
+- DualPurposeOutlet
+
+- PriceOver50K
+
+- Lamborghini
+
+- General Axioms Individuals Two types...
+
+- Individuals to describe properties
+
+<owl:NamedIndividual rdf:about="&Car_Ontology;TouchScreenDisplay">
+<rdf:type rdf:resource="&Car_Ontology;DisplayAddOn"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&Car_Ontology;ButterflyDoor">
+<rdf:type rdf:resource="&Car_Ontology;TwoDoor"/>
+</owl:NamedIndividual>
+
+- Unique individuals of type car
+- RaceCar
+- Elyssa'sCar
+- UnsafeCar Additional Comments Created by Ross Kaplan, Carter Lathrop, and Elyssa Spector Car Ontology Questions? <owl:Class rdf:about="&Car_Ontology;PriceOver50K">
+<owl:equivalentClass>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<rdf:Description rdf:about="&untitled-ontology-3;SportsCar"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://www.semanticweb.org/rosskaplan/ontologies/2013/2/AutomobileOntology1#hasYear"/>
+<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2010</owl:minQualifiedCardinality>
+<owl:onDataRange rdf:resource="&xsd;int"/>
+</owl:Restriction>
+<owl:Restriction>
+<owl:onProperty rdf:resource="&untitled-ontology-3;hasMileage"/>
+<owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">15000</owl:maxQualifiedCardinality>
+<owl:onDataRange rdf:resource="&xsd;int"/>
+</owl:Restriction>
+</owl:intersectionOf>
+</owl:Class>
+</owl:equivalentClass>
+<rdfs:subClassOf rdf:resource="&Car_Ontology;PriceRange"/>
+</owl:Class> <owl:Class rdf:about="&untitled-ontology-3;AutomaticTransmissionType">
+<rdfs:subClassOf rdf:resource="&untitled-ontology-3;TransmissionType"/>
+<owl:disjointWith rdf:resource="&untitled-ontology-3;ManualTransmissionType"/>
+</owl:Class> <owl:ObjectProperty rdf:about="&Car_Ontology;hasInteriorColor">
+<rdf:type rdf:resource="&owl;FunctionalProperty"/>
+<rdfs:domain rdf:resource="&Car_Ontology;Car"/>
+<rdfs:range rdf:resource="&Car_Ontology;InteriorColor"/>
+</owl:ObjectProperty> <owl:ObjectProperty rdf:about="&untitled-ontology-3;hasTransmission">
+<rdf:type rdf:resource="&owl;FunctionalProperty"/>
+<rdfs:domain rdf:resource="&Car_Ontology;Car"/>
+<rdfs:range rdf:resource="&untitled-ontology-3;TransmissionType"/>
+</owl:ObjectProperty> <owl:ObjectProperty rdf:about="&Car_Ontology;hasRoofType">
+<rdf:type rdf:resource="&owl;FunctionalProperty"/>
+<rdfs:domain rdf:resource="&Car_Ontology;Convertible"/>
+<rdfs:range rdf:resource="&Car_Ontology;Roof"/>
+</owl:ObjectProperty> <owl:ObjectProperty rdf:about="&Car_Ontology;hasPriceRange">
+<rdf:type rdf:resource="&owl;FunctionalProperty"/>
+<rdfs:domain rdf:resource="&Car_Ontology;Car"/>
+<rdfs:range rdf:resource="&Car_Ontology;PriceRange"/>
+</owl:ObjectProperty> <owl:DatatypeProperty rdf:about="&untitled-ontology-2;hasRemoteStart">
+<rdfs:domain rdf:resource="&Car_Ontology;Car"/>
+<rdfs:range rdf:resource="&xsd;boolean"/>
+</owl:DatatypeProperty> <owl:DatatypeProperty rdf:about="&untitled-ontology-3;hasMileage">
+<rdfs:domain rdf:resource="&Car_Ontology;Car"/>
+<rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty> <owl:DatatypeProperty rdf:about="&untitled-ontology-3;hasHorsePower">
+<rdfs:domain rdf:resource="&Car_Ontology;Car"/>
+<rdfs:range rdf:resource="&xsd;int"/>
+</owl:DatatypeProperty> Classes Data Properties Object Properties <owl:Class rdf:about="http://www.semanticweb.org/rosskaplan/ontologies/2013/2/AutomobileOntology1#Lamborghini">
+<owl:equivalentClass>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<rdf:Description rdf:about="&untitled-ontology-3;SportsCar"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="&untitled-ontology-2;hasManufacturer"/>
+<owl:hasValue rdf:resource="&untitled-ontology-2;Volkswagen"/>
+</owl:Restriction>
+<owl:Restriction>
+<owl:onProperty rdf:resource="&Car_Ontology;hasNumDoors"/>
+<owl:hasValue rdf:resource="http://www.semanticweb.org/rosskaplan/ontologies/2013/2/AutomobileOntology1#TwoDoor"/>
+</owl:Restriction>
+<owl:Restriction>
+<owl:onProperty rdf:resource="&Car_Ontology;hasPriceRange"/>
+<owl:hasValue rdf:resource="&Car_Ontology;Over50K"/>
+</owl:Restriction>
+<owl:Restriction>
+<owl:onProperty rdf:resource="&untitled-ontology-3;hasFuelType"/>
+<owl:hasValue rdf:resource="http://www.semanticweb.org/rosskaplan/ontologies/2013/2/AutomobileOntology1#UnleadedPremium"/>
+</owl:Restriction>
+<owl:Restriction>
+<owl:onProperty rdf:resource="&untitled-ontology-3;hasHorsePower"/>
+<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">350</owl:minQualifiedCardinality>
+<owl:onDataRange rdf:resource="&xsd;int"/>
+</owl:Restriction>
+<owl:Restriction>
+<owl:onProperty rdf:resource="&untitled-ontology-3;hasHeight"/>
+<owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">45</owl:maxQualifiedCardinality>
+<owl:onDataRange rdf:resource="&xsd;int"/>
+</owl:Restriction>
+</owl:intersectionOf>
+</owl:Class>
+</owl:equivalentClass>
+<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rosskaplan/ontologies/2013/2/AutomobileOntology1#CarMake"/>
+</owl:Class> Lamborghini DualPurposeOutlet and PriveOver50K General Axioms <rdf:Description>
+<rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+<owl:members rdf:parseType="Collection">
+<rdf:Description rdf:about="&Car_Ontology;Price0To5K"/>
+<rdf:Description rdf:about="&Car_Ontology;Price10KTo20K"/>
+<rdf:Description rdf:about="&Car_Ontology;Price20KTo30K"/>
+<rdf:Description rdf:about="&Car_Ontology;Price30KTo40K"/>
+<rdf:Description rdf:about="&Car_Ontology;Price40KTo50K"/>
+<rdf:Description rdf:about="&Car_Ontology;Price5KTo10K"/>
+<rdf:Description rdf:about="&Car_Ontology;PriceOver50K"/>
+</owl:members>
+</rdf:Description>
+<rdf:Description>
+<rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+<owl:members rdf:parseType="Collection">
+<rdf:Description rdf:about="http://www.semanticweb.org/rosskaplan/ontologies/2013/2/AutomobileOntology1#Cadillac"/>
+<rdf:Description rdf:about="http://www.semanticweb.org/rosskaplan/ontologies/2013/2/AutomobileOntology1#Infiniti"/>
+<rdf:Description rdf:about="http://www.semanticweb.org/rosskaplan/ontologies/2013/2/AutomobileOntology1#Lamborghini"/>
+<rdf:Description rdf:about="http://www.semanticweb.org/rosskaplan/ontologies/2013/2/AutomobileOntology1#Subaru"/>
+</owl:members>
+</rdf:Description> Individuals <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rosskaplan/ontologies/2013/2/AutomobileOntology1#RaceCar">
+<rdf:type rdf:resource="&Car_Ontology;Car"/>
+<rdf:type rdf:resource="&untitled-ontology-3;SportsCar"/>
+<hasYear rdf:datatype="&xsd;int">2012</hasYear>
+<untitled-ontology-3:hasTorque rdf:datatype="&xsd;int">400</untitled-ontology-3:hasTorque>
+<untitled-ontology-3:hasHorsePower rdf:datatype="&xsd;int">600</untitled-ontology-3:hasHorsePower>
+<Car_Ontology:hasFuelInjectionType rdf:resource="&Car_Ontology;ElectronicInjection"/>
+<untitled-ontology-3:hasFuelType rdf:resource="http://www.semanticweb.org/rosskaplan/ontologies/2013/2/AutomobileOntology1#UnleadedPremium"/>
+<untitled-ontology-3:hasTransmission rdf:resource="&untitled-ontology-3;6Speed"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rosskaplan/ontologies/2013/2/AutomobileOntology1#Elyssa&apos;sCar">
+<rdf:type rdf:resource="&Car_Ontology;Car"/>
+<rdf:type rdf:resource="&Car_Ontology;Sedan"/>
+<hasYear rdf:datatype="&xsd;int">2011</hasYear>
+<untitled-ontology-3:hasMileage rdf:datatype="&xsd;int">30000</untitled-ontology-3:hasMileage>
+<untitled-ontology-2:hasRemoteStart rdf:datatype="&xsd;boolean">false</untitled-ontology-2:hasRemoteStart>
+<untitled-ontology-2:hasManufacturer rdf:resource="&untitled-ontology-2;Toyota"/>
+<hasCarMake rdf:resource="http://www.semanticweb.org/rosskaplan/ontologies/2013/2/AutomobileOntology1#Subaru"/>
+</owl:NamedIndividual> <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rosskaplan/ontologies/2013/2/AutomobileOntology1#UnsafeCar">
+<rdf:type rdf:resource="&Car_Ontology;Car"/>
+<untitled-ontology-3:hasHorsePower rdf:datatype="&xsd;int">1000</untitled-ontology-3:hasHorsePower>
+<hasYear rdf:datatype="&xsd;int">1970</hasYear>
+<untitled-ontology-2:hasAirbagSystem rdf:resource="&untitled-ontology-2;DriverAirbag"/>
+<untitled-ontology-2:hasLockType rdf:resource="&untitled-ontology-2;ManualLocks"/>
+<untitled-ontology-3:hasCondition rdf:resource="http://www.semanticweb.org/rosskaplan/ontologies/2013/2/AutomobileOntology1#Poor"/>
+</owl:NamedIndividual> <owl:Class rdf:about="&untitled-ontology-2;DualPurposeOutlet">
+<owl:equivalentClass>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Restriction>
+<owl:onProperty rdf:resource="&untitled-ontology-2;has12VPowerOutlets"/>
+<owl:someValuesFrom rdf:resource="&xsd;int"/>
+</owl:Restriction>
+<owl:Restriction>
+<owl:onProperty rdf:resource="&untitled-ontology-2;hasCigaretteBurners"/>
+<owl:someValuesFrom rdf:resource="&xsd;int"/>
+</owl:Restriction>
+</owl:intersectionOf>
+</owl:Class>
+</owl:equivalentClass>
+</owl:Class> <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2013/2/Car_Ontology.owl#Car"/> <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2013/2/Car_Ontology.owl#Coupe">
+<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2013/2/Car_Ontology.owl#Car"/>
+<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2013/2/Car_Ontology.owl#TwoDoor"/>
+<owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2013/2/Car_Ontology.owl#FourDoor"/>
+<owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2013/2/Car_Ontology.owl#OneDoor"/>
+<owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2013/2/Car_Ontology.owl#PriceOver50K"/>
+<owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2013/2/Car_Ontology.owl#Sedan"/>
+<owl:disjointWith rdf:resource="http://www.semanticweb.org/rosskaplan/ontologies/2013/2/AutomobileOntology1#Cadillac"/>
+<owl:disjointWith rdf:resource="http://www.semanticweb.org/rosskaplan/ontologies/2013/2/AutomobileOntology1#Infiniti"/>
+<owl:disjointWith rdf:resource="http://www.semanticweb.org/rosskaplan/ontologies/2013/2/AutomobileOntology1#Lamborghini"/>
+<owl:disjointWith rdf:resource="http://www.semanticweb.org/rosskaplan/ontologies/2013/2/AutomobileOntology1#Minivan"/>
+<owl:disjointWith rdf:resource="http://www.semanticweb.org/rosskaplan/ontologies/2013/2/AutomobileOntology1#Truck"/>
+<owl:disjointWith rdf:resource="http://www.semanticweb.org/rosskaplan/ontologies/2013/2/untitled-ontology-3#SportsCar"/>
+</owl:Class>

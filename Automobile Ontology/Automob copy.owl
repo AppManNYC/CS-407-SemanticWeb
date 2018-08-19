@@ -1,0 +1,3022 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#"
+     xml:base="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Consumes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Consumes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Automobile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Engine -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Engine">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Automobile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_manufacturers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_manufacturers">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Automobile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Power -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Power">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Automobile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Price">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Automobile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Seating_capacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Seating_capacity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Automobile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Wheels -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Wheels">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Automobile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Width -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Width">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Automobile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_height -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_height">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Automobile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_length -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_length">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Automobile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_load -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_load">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Automobile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Automobile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_speed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_speed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Automobile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#AUTOMOB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#AUTOMOB"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Aerial_Vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Aerial_Vehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Automobile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Attribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Attribute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#AUTOMOB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Automobile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Automobile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#AUTOMOB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Bike -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Bike">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Ground_Vehicle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Consumes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Engine"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_manufacturers"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Power"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Price"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_speed"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Seating_capacity"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Wheels"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Ground_Vehicle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Consumes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Engine"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_manufacturers"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Power"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Price"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Seating_capacity"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Wheels"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_height"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_length"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_speed"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Car_Taxi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Car_Taxi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Ground_Vehicle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Consumes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Engine"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_manufacturers"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Power"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Price"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Seating_capacity"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_height"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_length"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_speed"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Wheels"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Civilian_Ship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Civilian_Ship">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Water_Vehicle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_manufacturers"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Consumes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Engine"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Power"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Price"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Seating_capacity"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Width"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_height"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_length"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_speed"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Military_Ship"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#OffRoad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#OffRoad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Car_Taxi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Electric_car -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Electric_car">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Car_Taxi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fighter_Plane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fighter_Plane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Plane"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_manufacturers"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Consumes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Engine"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Power"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Price"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Width"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_height"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_length"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_speed"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Wheels"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Seating_capacity"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Seating_capacity"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Passenger_Plane"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Aviation_Fuel"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#CNG"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Coal"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Diesel"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Electricity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Coal"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_oil"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Grades"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Jet_Fuel"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Liquid_Hydrogen_oxygen"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Magnetic"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Petrol"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Government -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Government">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Bus"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Ground_Vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Ground_Vehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Automobile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Metro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Metro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Train"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Military_Ship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Military_Ship">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Water_Vehicle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_manufacturers"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Consumes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Engine"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Power"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Price"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Seating_capacity"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Width"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_height"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_length"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_speed"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Mono_Rail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Mono_Rail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Train"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Normal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Normal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Car_Taxi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Passenger_Plane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Passenger_Plane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Plane"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_manufacturers"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Consumes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Engine"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Power"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Price"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Seating_capacity"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Width"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_height"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_length"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_speed"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Wheels"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Plane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Plane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Aerial_Vehicle"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Space_Shuttle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Private -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Private">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Bus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Railways -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Railways">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Train"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Space_Shuttle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Space_Shuttle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Aerial_Vehicle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_manufacturers"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Consumes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Engine"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Power"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Price"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Seating_capacity"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Wheels"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Width"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_height"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_length"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_speed"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Sports -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Sports">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Car_Taxi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Taxi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Taxi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Car_Taxi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Ground_Vehicle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Consumes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Engine"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_manufacturers"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Power"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Price"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Seating_capacity"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Wheels"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_height"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_length"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_speed"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Truck_Transportation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Truck_Transportation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Ground_Vehicle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Consumes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Engine"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_manufacturers"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Power"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Price"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Wheels"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_height"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_length"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_load"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_speed"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Seating_capacity"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Water_Vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Water_Vehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Automobile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#dl1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#dl1">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Ground_Vehicle"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#dl2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#dl2">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Water_Vehicle"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Seating_capacity"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1200</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#dl3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#dl3">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Aerial_Vehicle"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_rating"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.1</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#dl5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#dl5">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Water_Vehicle"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_speed"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25 knots</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#A7_sportback -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#A7_sportback">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Sports"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Chrysler_A57_multi"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Audi"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2300 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">42000</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">168 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#AMW -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#AMW">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Truck_Transportation"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Diesel"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW_Six_Stroke"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Ashok_Leyland"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1200 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">310000</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14 feet</has_length>
+        <has_load rdf:datatype="http://www.w3.org/2001/XMLSchema#string">500 kg</has_load>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">55 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Accent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Accent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Normal"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Taxi"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Knight_Sleeve_Valve"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Hyundai"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1495 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17745</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9 feet </has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">84 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#AirUSA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#AirUSA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Passenger_Plane"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Aviation_Fuel"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Holden_V80"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#TurboShaft"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2500 hp</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2333370</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</has_Wheels>
+        <has_Width rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16 feet</has_Width>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.1</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">500 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Airways -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Airways">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fighter_Plane"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Jet_Fuel"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Cummins_ISB"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Hindustan_Aeronautics_limited"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2400 hp</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">255580</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</has_Wheels>
+        <has_Width rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30 feet</has_Width>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.2</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">600 mph</has_speed>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Airways"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fighter_Plane"/>
+        <rdfs:comment>
+            <rdf:Description rdf:nodeID="_:genid154"/>
+        </rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Alto_800 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Alto_800">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Normal"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Taxi"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Cummins_ISB"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Maruti"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4994</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6.5 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">56 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Apache -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Apache">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Bike"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#DTS_i_150"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#TVS"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">180 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1194</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</has_Wheels>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.1</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">112 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Apollo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Apollo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Space_Shuttle"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Liquid_Hydrogen_oxygen"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#TurboShaft"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#ISRO"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10000 hp</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15558030</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</has_Seating_capacity>
+        <has_Width rdf:datatype="http://www.w3.org/2001/XMLSchema#string">21 feet</has_Width>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">70 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1500 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Ashok_Leyland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Ashok_Leyland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Aston_Martin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Aston_Martin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Aston_Martin_DB9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Aston_Martin_DB9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Sports"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Commer_Knocker"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Aston_Martin"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2400 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">240100</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">179 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Audi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Audi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Audi_R8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Audi_R8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Sports"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Knight_Sleeve_Valve"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Audi"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2400 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">154800</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.11 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">124 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Audi_R8_GRAND-AM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Audi_R8_GRAND-AM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Sports"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#K12"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Audi"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2100 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">182700</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.8</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">173 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Aviation_Fuel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Aviation_Fuel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW_3_Series -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW_3_Series">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Normal"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gobron_Opposed_Piston"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2000 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">390000</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.8</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">109 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW_750 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW_750">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Sports"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#British_racing_Motors"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2200 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">143000</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">180 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW_M3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW_M3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Normal"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#British_racing_Motors"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2000 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">77545</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">87 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW_Six_Stroke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW_Six_Stroke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW_X3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW_X3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Normal"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Mazada"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1900 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">43050</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">93 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW_Z1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW_Z1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Sports"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Chrysler_A57_multi"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2300 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">63200</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">174 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW_Z4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW_Z4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Sports"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gobron_Opposed_Piston"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2500 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">38000</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">210 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Bajaj -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Bajaj">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Bombardier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Bombardier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#British_racing_Motors -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#British_racing_Motors">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#CNG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#CNG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#CR4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#CR4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Cessna_Citation_CJ4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Cessna_Citation_CJ4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fighter_Plane"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Jet_Fuel"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#TurboFan"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3000 hp</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">249706</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</has_Wheels>
+        <has_Width rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20 feet</has_Width>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.8</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">650 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Chrysler_A57_multi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Chrysler_A57_multi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Cifa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Cifa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Civic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Civic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Normal"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Diesel"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Mazada"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Honda"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1400 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">24500</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.3</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">87 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Cizeta_moroder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Cizeta_moroder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Coal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Coal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Commer_Knocker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Commer_Knocker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Cummins_ISB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Cummins_ISB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#DTC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#DTC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Government"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#CNG"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Holden_V80"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#TATA"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">750 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">31116</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">78 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#DTS_i_150 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#DTS_i_150">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#DTS_i_180 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#DTS_i_180">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#DTS_i_220 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#DTS_i_220">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Damen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Damen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Delhi_metro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Delhi_metro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Metro"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Electricity"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Cummins_ISB"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Bombardier"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100 Kw</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">311160</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">500</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">96</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">75 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Dhow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Dhow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Civilian_Ship"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_oil"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Cummins_ISB"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Stx_Finland"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">750 HP</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">777901</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">500</has_Seating_capacity>
+        <has_Width rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20 feet</has_Width>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20 feet
+</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">40 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25 knots</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Diesel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Diesel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Discovery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Discovery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Space_Shuttle"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Liquid_Hydrogen_oxygen"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#TurboFan"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#NASA"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7000 hp</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15558030</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</has_Seating_capacity>
+        <has_Width rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18 feet</has_Width>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">70 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6000 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Electricity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Electricity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Evo_X_RS_Road -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Evo_X_RS_Road">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#OffRoad"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#British_racing_Motors"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Mitsubishi"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1300 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">122068</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">53 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fiat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fiat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Five_Stroke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Five_Stroke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Flat_Twin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Flat_Twin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Four_stroke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Four_stroke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Frightinear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Frightinear">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Coal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Coal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_oil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_oil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gobron_Opposed_Piston -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gobron_Opposed_Piston">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Grades -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Grades">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#HMS_Hood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#HMS_Hood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Military_Ship"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Coal"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Cummins_ISB"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Hindustan_Aeronautics_limited"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">800 HP</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1011271</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</has_Seating_capacity>
+        <has_Width rdf:datatype="http://www.w3.org/2001/XMLSchema#string">55 feet</has_Width>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">45 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30 knots</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Hero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Hero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Hindustan_Aeronautics_limited -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Hindustan_Aeronautics_limited">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Hitachi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Hitachi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Holden_V80 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Holden_V80">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Honda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Honda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Honda_CV_80 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Honda_CV_80">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Hyundai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Hyundai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#ISRO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#ISRO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Indian_Railways -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Indian_Railways">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Indica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Indica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Taxi"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#CR4"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#TATA"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1200 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7779</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">62 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Innova -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Innova">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Normal"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Taxi"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Diesel"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Cummins_ISB"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Toyota"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1650 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11668</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">62 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Jet_Fuel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Jet_Fuel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#K12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#K12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Knight_Sleeve_Valve -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Knight_Sleeve_Valve">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Kolkata_Metro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Kolkata_Metro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Metro"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Electricity"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Cummins_ISB"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Hitachi"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60 kw</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">155580</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">400</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60 feet
+</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">69 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Kualalumpur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Kualalumpur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Mono_Rail"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Electricity"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Grades"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Scomi"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">70 kw</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">211782</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">500</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.8</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">600 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Lancer_Evolution -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Lancer_Evolution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#OffRoad"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Chrysler_A57_multi"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Mitsubishi"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1500 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">34348</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">78 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Liquid_Hydrogen_oxygen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Liquid_Hydrogen_oxygen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Maersk_line -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Maersk_line">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Civilian_Ship"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_oil"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gobron_Opposed_Piston"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Samsung_heavy_Industries"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">800 HP</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">871250</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">800</has_Seating_capacity>
+        <has_Width rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25 feet</has_Width>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">40 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">28 knots</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Magnetic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Magnetic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Maruti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Maruti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Mazada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Mazada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Mitsubishi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Mitsubishi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#NewYorkCity_monorail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#NewYorkCity_monorail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Mono_Rail"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Electricity"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Grades"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Bombardier"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">75 kw</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8863876</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">600</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.8</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">650 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#NASA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#NASA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Nissan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Nissan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Nissan_leaf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Nissan_leaf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Electric_car"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Electricity"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Knight_Sleeve_Valve"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Nissan"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1500 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">33900</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">72 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Petrol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Petrol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Piston -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Piston">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Porsche -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Porsche">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Porsche_911SC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Porsche_911SC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Sports"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#CR4"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Porsche"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2500 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">927974</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">211 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Pulsar_220 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Pulsar_220">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Bike"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#DTS_i_220"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Bajaj"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">220 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1408</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</has_Wheels>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">186 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#SilverStar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#SilverStar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Railways"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Electricity"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Cummins_ISB"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Indian_Railways"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">150 kW</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4999999</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">800</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">500</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">120 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Range -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Range">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Range_Rover_Evoque -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Range_Rover_Evoque">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#OffRoad"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Knight_Sleeve_Valve"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Range"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1500 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">64000</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.11 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.3</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">76 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Rocket_Booster_solid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Rocket_Booster_solid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Samsung_heavy_Industries -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Samsung_heavy_Industries">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Scomi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Scomi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Stx_Finland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Stx_Finland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Subaru -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Subaru">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Subaru_Forester -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Subaru_Forester">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#OffRoad"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gobron_Opposed_Piston"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Subaru"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1400 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">36290</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">68 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Swift -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Swift">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Normal"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Taxi"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Diesel"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Cummins_ISB"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Maruti"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">450 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10112</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">72 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#TATA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#TATA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#TVS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#TVS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Toyota -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Toyota">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Tug_boat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Tug_boat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Civilian_Ship"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_oil"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Cummins_ISB"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Scomi"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">750 HP</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">933481</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">600</has_Seating_capacity>
+        <has_Width rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32 feet</has_Width>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">45 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30 knots</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#TurboFan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#TurboFan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#TurboShaft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#TurboShaft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Turbojet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Turbojet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Two_Stroke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Two_Stroke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#USS_Arizona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#USS_Arizona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Military_Ship"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_oil"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Honda_CV_80"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Hindustan_Aeronautics_limited"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850 HP</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70000000</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1200</has_Seating_capacity>
+        <has_Width rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30 feet
+</has_Width>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">40 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">35 knots</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#VOLVO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#VOLVO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Private"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#CNG"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Holden_V80"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Ashok_Leyland"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1000 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">38000</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">80 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fiat_X1/9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fiat_X1/9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Sports"/>
+        <Consumes rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Gasoline"/>
+        <has_Engine rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#K12"/>
+        <has_manufacturers rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fiat"/>
+        <has_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2100 cc</has_Power>
+        <has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">777901</has_Price>
+        <has_Seating_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Seating_capacity>
+        <has_Wheels rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_Wheels>
+        <has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7 feet</has_height>
+        <has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9 feet</has_length>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</has_rating>
+        <has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">112 mph</has_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Aerial_Vehicle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Ground_Vehicle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Water_Vehicle"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Bike"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Bus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Car_Taxi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Train"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Truck_Transportation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Metro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Mono_Rail"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Railways"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#A7_sportback"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Aston_Martin_DB9"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Audi_R8"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Audi_R8_GRAND-AM"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW_750"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW_Z1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW_Z4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Porsche_911SC"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fiat_X1/9"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Accent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Alto_800"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW_3_Series"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW_M3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#BMW_X3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Civic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Innova"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Swift"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Airways"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Cessna_Citation_CJ4"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Apache"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Pulsar_220"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Apollo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Discovery"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Delhi_metro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Kolkata_Metro"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Dhow"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Maersk_line"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Tug_boat"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Evo_X_RS_Road"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Lancer_Evolution"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Range_Rover_Evoque"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Subaru_Forester"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#HMS_Hood"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#USS_Arizona"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Indica"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Innova"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Innova"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Swift"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Kualalumpur"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#NewYorkCity_monorail"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Automobile"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_manufacturers"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Manufacturers"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Engine"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Civilian_Ship"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Engine"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Fuel_Type"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Consumes"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Automobile"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#has_Price"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="urn:swrl#y"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120000</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Ground_Vehicle"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/Matthew_Krieger/ontologies/Automobile#Bike"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+
